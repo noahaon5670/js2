@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calclator</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+  </head>
+  <body>
+    <main>
+      <div class="content-width">
+        <div class="show-result">
+          <p id="result">0</p>
+        </div>
+        <div class="calc-btn">
+          <div class="other-btn">
+            <input type="button" value="AC" onclick="allClear()"/>
+            <input type="button" value="C" onclick="clearBtn()"/>
+            <input class="blank" type="button" value="" onclick=""/>
+          </div>
+          <div class="num-btn">
+            <input class="num" type="button" value=7 onclick="edit(this)"/>
+            <input class="num" type="button" value="8" onclick="edit(this)"/>
+            <input class="num" type="button" value="9" onclick="edit(this)"/>
+            <input class="num" type="button" value="4" onclick="edit(this)"/>
+            <input class="num" type="button" value="5" onclick="edit(this)"/>
+            <input class="num" type="button" value="6" onclick="edit(this)"/>
+            <input class="num" type="button" value="1" onclick="edit(this)"/>
+            <input class="num" type="button" value="2" onclick="edit(this)"/>
+            <input class="num" type="button" value="3" onclick="edit(this)"/>
+            <input class="num" type="button" value="0" onclick="edit(this)"/>
+            <input class="num" type="button" value="00" onclick="edit(this)"/>
+            <input class="decimal-point" type="button" value="." onclick="edit(this)"/>
+          </div>
+          <div class="arithmetic-operator-btn">
+            <input class="arithmetic" type="button" value="÷" onclick="edit(this)"/>
+            <input class="arithmetic" type="button" value="×" onclick="edit(this)"/>
+            <input class="arithmetic" type="button" value="-" onclick="edit(this)"/>
+            <input class="arithmetic" type="button" value="+" onclick="edit(this)"/>
+            <input type="button" value="=" onclick="calc()"/>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
